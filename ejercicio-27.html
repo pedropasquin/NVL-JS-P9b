@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript, variables</title>
+		<script  type="application/javascript">
+			
+			/* declaración de las variables propuestas */
+
+			var diasConciertos = 'Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo';
+			var ciudadesConciertos = 'Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti';
+
+			/* convertimos las cadenas en arrays especificando el caracter de ruptura */
+
+			diasConciertos = diasConciertos.split(',');
+			ciudadesConciertos = ciudadesConciertos.split('.');
+
+			/* declaramos la variable miArray con el primer elemento de la cadena a
+			y el primer elemento de la cadena b */
+			
+			var miArray = [[diasConciertos[0],ciudadesConciertos[0]]];
+
+			/* insertamos cada uno del resto de los elementos utilizando el método push */
+
+			miArray.push([diasConciertos[1],ciudadesConciertos[1]]);
+			miArray.push([diasConciertos[2],ciudadesConciertos[2]]);
+			miArray.push([diasConciertos[3],ciudadesConciertos[3]]);
+			miArray.push([diasConciertos[4],ciudadesConciertos[4]]);
+			miArray.push([diasConciertos[5],ciudadesConciertos[5]]);
+			miArray.push([diasConciertos[6],ciudadesConciertos[6]]);
+			miArray.push([diasConciertos[7],ciudadesConciertos[7]]);
+
+		</script>		
+	</head>
+	<body>
+
+	</body>
+</html>
